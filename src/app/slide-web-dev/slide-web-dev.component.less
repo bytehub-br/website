@@ -1,9 +1,49 @@
 .mainContent{
     margin: auto;
+    margin-top: 0;
     width: 1200px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    overflow: visible;
 }
+.imageContainer{
+    display: flex;
+    justify-content: flex-end;
+}
+
 .mainImage{
-    width: 600px;
+    height: 35em;
+}
+
+button{
+    width: 230px;
+    height: 50px;
+    background: #E05359;
+    border-radius: 7px;
+    color:white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px -4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size:  80px;
+    color: #2D2D2D;
+}
+.mainPresentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.paragraph{
+    margin-top: -30px;
+    width: 400px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 23px;
 }
