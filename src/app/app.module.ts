@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { routing } from './app-routing.module';
+import { routing } from './app-routing';
 import { AppComponent } from './app.component';
 import { LoginModule } from './login/login.module';
 
@@ -11,7 +11,9 @@ import { MnFullpageModule } from 'ngx-fullpage';
 import { SlideWebDevComponent } from './slide-web-dev/slide-web-dev.component';
 import { SlideAppComponent } from './slide-app/slide-app.component';
 import { SlideBlockchainComponent } from './slide-blockchain/slide-blockchain.component';
-import { BlockchainComponent } from './blockchain/blockchain.component';
+import { AboutBlockchainComponent } from "./about-blockchain/about-blockchain.component";
+import { AboutWebdevComponent } from './about-webdev/about-webdev.component';
+import { AboutAppComponent } from './about-app/about-app.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { BlockchainComponent } from './blockchain/blockchain.component';
     SlideWebDevComponent,
     SlideAppComponent,
     SlideBlockchainComponent,
-    BlockchainComponent,
+    AboutBlockchainComponent,
+    AboutWebdevComponent,
+    AboutAppComponent
   
   ],
   imports: [
