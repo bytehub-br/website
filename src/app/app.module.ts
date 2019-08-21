@@ -11,7 +11,6 @@ import { MnFullpageModule } from 'ngx-fullpage';
 import { SlideWebDevComponent } from './slide-web-dev/slide-web-dev.component';
 import { SlideAppComponent } from './slide-app/slide-app.component';
 import { SlideBlockchainComponent } from './slide-blockchain/slide-blockchain.component';
-import { AboutPageComponent } from './about-page/about-page.component';
 import { BlockchainComponent } from './blockchain/blockchain.component';
 
 @NgModule({
@@ -20,7 +19,6 @@ import { BlockchainComponent } from './blockchain/blockchain.component';
     SlideWebDevComponent,
     SlideAppComponent,
     SlideBlockchainComponent,
-    AboutPageComponent,
     BlockchainComponent,
   
   ],
