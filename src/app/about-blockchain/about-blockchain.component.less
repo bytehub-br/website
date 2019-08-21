@@ -1,0 +1,145 @@
+.mainContent{
+    width: 1200px;
+    margin: auto;
+}
+
+.clientTitle{
+    margin-top: 0;
+    padding: 0;
+}
+
+.clientTitle{
+    line-height: 20px;
+}
+
+h2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+
+    color: #313131;
+}
+
+.clientName{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 38px;
+
+    color: #000000;
+}
+
+.casoDeUso{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+
+    color: #787878;
+}
+
+.mainCardText{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #737373;
+}
+
+.cardIcon{
+    height: 100px;
+}
+
+h4{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 0px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr)) ;
+    grid-template-rows: repeat(3, minmax(100px, 1fr));
+    grid-template-areas: "card1 mainCard"
+                         "card2 mainCard"
+                         "card3 mainCard";
+    grid-row-gap: 25px;
+    grid-column-gap: 50px;
+}
+
+.card1{
+    grid-area: card1;
+    display: flex;
+    padding: 25px;
+
+    background: #FFFFFF;
+    border: 2px solid rgba(78, 75, 75, 0.21);
+    box-sizing: border-box;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+}
+
+.card2{
+    grid-area: card2;
+    display: flex;
+    padding: 25px;
+
+    background: #FFFFFF;
+    border: 2px solid rgba(78, 75, 75, 0.21);
+    box-sizing: border-box;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+}
+
+.card3{
+    grid-area: card3;
+    display: flex;
+    padding: 25px;
+
+    background: #FFFFFF;
+    border: 2px solid rgba(78, 75, 75, 0.21);
+    box-sizing: border-box;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+}
+
+.clientCard{
+    grid-area: mainCard;
+
+    padding: 25px 60px;
+    background: #FFFFFF;
+    border: 2px solid rgba(78, 75, 75, 0.21);
+    box-sizing: border-box;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+}
+
+.text{
+    padding: 0px 20px;
+    display: block;
+}
+
+.description{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #4B4A4A;
+
+}
+
+.footer{
+    position: absolute;
+    width:1200px;
+    height: 100px;
+    background: #CA5059;
+    border-radius: 8px;
+    bottom: -50px;
+}
