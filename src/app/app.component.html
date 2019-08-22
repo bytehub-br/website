@@ -1,41 +1,40 @@
+<div class="mainPage">
+  <div class="navbar">
+    <img class="logo" src="../assets/images/Bytehub logo.svg" alt="">
+  </div>
+  <!-- Main page slides start -->
+  <div id="carouselExampleControls" data-interval="false" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <app-slide-web-dev></app-slide-web-dev>
+      </div>
 
-        <div class="navbar">
-          <img class="logo" src="../assets/images/Bytehub logo.svg" alt="">
-        </div>
-          <!-- Main page slides start -->
-          <div id="carouselExampleControls" data-interval="false" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner" >
-              <div  class="carousel-item active">
-                <app-slide-web-dev></app-slide-web-dev>
-              </div>
+      <div class="carousel-item">
+        <app-slide-app></app-slide-app>
+      </div>
 
-              <div class="carousel-item"> 
-                  <app-slide-app></app-slide-app>
-              </div>
-          
-              <div class="carousel-item"> 
-                  <app-slide-blockchain></app-slide-blockchain>
-              </div>  
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>  
-          <!-- Main page slides end -->
-          <div style="position: absolute; left: 50%;">
-            <div style="position: relative; left: -50%;">
-              <img class="circle" src="../assets/images/Form.png" alt="">
-            </div>
-          </div>
-        
-         
-  
-          <router-outlet></router-outlet>
-    
-        
-     
+      <div class="carousel-item">
+        <app-slide-blockchain></app-slide-blockchain>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!-- Main page slides end -->
+
+  <!-- <div style="position: absolute; left: 50%;">
+    <div style="position: relative; left: -50%;">
+      <img class="circle" src="../assets/images/Form.png" alt="">
+    </div>
+  </div>
+</div>] -->
+
+
+
+  <router-outlet></router-outlet>
