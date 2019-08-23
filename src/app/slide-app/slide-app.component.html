@@ -3,7 +3,10 @@
     <h1 class="title">Aplicativo</h1>
     <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur numquam illo iusto. Hic sit
       dolor iste voluptatibus, perspiciatis, veniam neque cupiditate doloribus.</p>
-      <button (click)="navigate('/about-app')">Saiba mais</button>
+      <button 
+          (click)="navigate('/about-app')"  
+          ngx-scroll-to="#appAboutPage"
+      >Saiba mais</button>
   </div>
   <div class="imageContainer">
     <img class="mainImage" src="../../assets/images/Main image Aplicativo.svg" alt="">

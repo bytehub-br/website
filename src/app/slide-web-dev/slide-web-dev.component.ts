@@ -17,4 +17,8 @@ export class SlideWebDevComponent implements OnInit {
     this.router.navigate([route])
   }
 
+  scroll(el: HTMLElement) {
+    el.scrollIntoView();
+  }
+
 }

@@ -1,5 +1,9 @@
-<div class="mainContent">
-    <h2>Por que usar <strong>Blockchain</strong>?</h2>
+<div class="mainContent" id="blockchainAboutPage">
+    <div class="cardsTitle">
+            <button ngx-scroll-to 
+             [ngx-scroll-to-offset]="-1500"><img class="backPage" src="../../assets/images/left-arrow.svg" alt=""></button>
+            <h2>Vantagem de usar <strong>Blockchain</strong></h2>
+    </div>
     <div class="cards">
         <div class="card1">
             <img class="cardIcon" src="../../assets/images/Circle.png" alt="">
@@ -23,17 +27,20 @@
             </div>
         </div>
         <div class="clientCard">
-            <div class="clientTitle">
-                <p class="casoDeUso">Caso de uso</p>
-                <p class="clientName">Cliente: GoMoney</p>
-            </div>  
-            
-            <p class="mainCardText"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quas cupiditate sint sed accusantium repudiandae reprehenderit
-                esse consectetur eum repellendus quae quod unde similique 
-                adipisci voluptate natus incidunt impedit, rem provident!</p>
-
-            <button class="clientButton" href="https://gomoney.me/">Ir para o site</button>
+                <div class="textArea">    
+                    <div class="clientTitle">
+                        <p class="casoDeUso">Caso de uso</p>
+                        <p class="clientName">Cliente: <strong>GoMoney</strong></p>
+                    </div>  
+                    
+                    <p class="mainCardText"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quas cupiditate sint sed accusantium repudiandae reprehenderit
+                        esse consectetur eum repellendus quae quod unde similique 
+                        adipisci voluptate natus incidunt impedit, rem provident!</p>
+                </div>            
+                <form target="_blank" action="https://gomoney.me/">   
+                    <input type="submit" class="clientButton" value="Conhecer o site"/>
+                </form>
         </div>
         <div class="footer"></div>
     </div>

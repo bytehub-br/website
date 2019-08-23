@@ -3,7 +3,12 @@
     <img class="logo" src="../assets/images/Bytehub logo.svg" alt="">
   </div>
   <!-- Main page slides start -->
-  <div id="carouselExampleControls" data-interval="false" class="carousel slide" data-ride="carousel">
+  <div id="carouselExampleControls" data-interval="5000" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
         <app-slide-web-dev></app-slide-web-dev>
@@ -29,13 +34,11 @@
 </div>
   <!-- Main page slides end -->
 
-  <!-- <div style="position: absolute; left: 50%;">
+<!-- <div style="position: absolute; left: 50%;">
     <div style="position: relative; left: -50%;">
-      <img class="circle" src="../assets/images/Form.png" alt="">
+      <img class="circle" src="../assets/images/Circle.png" alt="">
     </div>
-  </div>
-</div>] -->
+</div> -->
 
 
-
-  <router-outlet></router-outlet>
+<router-outlet></router-outlet>

@@ -7,13 +7,14 @@ import { LoginModule } from './login/login.module';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
-import { MnFullpageModule } from 'ngx-fullpage';
 import { SlideWebDevComponent } from './slide-web-dev/slide-web-dev.component';
 import { SlideAppComponent } from './slide-app/slide-app.component';
 import { SlideBlockchainComponent } from './slide-blockchain/slide-blockchain.component';
 import { AboutBlockchainComponent } from "./about-blockchain/about-blockchain.component";
 import { AboutWebdevComponent } from './about-webdev/about-webdev.component';
 import { AboutAppComponent } from './about-app/about-app.component';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { AboutAppComponent } from './about-app/about-app.component';
     routing,
     LoginModule,
     BrowserAnimationsModule,
-    MnFullpageModule.forRoot()
+    ScrollToModule.forRoot(),
+ 
   ],
   providers: [],
   bootstrap: [AppComponent]

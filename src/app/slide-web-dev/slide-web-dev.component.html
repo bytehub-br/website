@@ -2,7 +2,11 @@
     <div class="mainPresentation">
         <h1 class="title">Sistemas Web</h1>
         <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur numquam illo iusto. Hic sit dolor iste voluptatibus, perspiciatis, veniam neque cupiditate doloribus.</p>
-        <button (click)="navigate('/about-webdev')">Saiba mais</button>
+        <button 
+            (click)="navigate('/about-webdev')"
+            ngx-scroll-to="#webAboutPage"
+            >Saiba mais</button>
+        
     </div>
     <div class="imageContainer">
         <img class="mainImage" src="../../assets/images/Main image Web.svg" alt="">
