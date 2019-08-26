@@ -5,8 +5,9 @@
 .mainContent{
     width: 1200px;
     margin: auto;
-    margin-top: 100px;
+    padding-top: 75px;
     height: 500px;
+    min-height: 500px;
 }
 
 .clientTitle{
@@ -172,15 +173,158 @@ h4{
     line-height: 22px;
     width: 300px;
     color: #4B4A4A;
-    
-
 }
 
 .footer{
-    margin-top: 10vh;
-    width:1200px;
+    width:85vw;
     height: 50px;
     background: #CA5059;
     border-radius: 8px 8px 0 0;
     bottom: -50px;
+}
+
+@media only screen and (max-width:1400px){
+   .mainContent{
+        width: 85vw;
+        margin: auto;
+        margin-top: 10vh;
+        height:90vh;
+    }
+    h4{
+        font-size: 18px;
+        margin-bottom: 18px;
+    }
+    h2{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 35px;
+    
+        color: #313131;
+        margin-bottom: 30px;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(100px, 1fr)) ;
+        grid-template-rows: repeat(3, minmax(50px, 1fr));
+        grid-template-areas: "card1 mainCard"
+                             "card2 mainCard"
+                             "card3 mainCard";
+        grid-row-gap: 25px;
+        grid-column-gap: 50px;
+        height: 85vh;
+        min-height: 550px;
+    }
+    .cardIcon{
+        height: 70px;
+    }
+    .card1, .card2, .card3{
+        padding: 10px;
+        min-width: 400px;
+    }
+    .clientName{
+        font-size: 26px;
+    }
+    
+    .casoDeUso{
+        font-size: 18px;
+        color: #787878;
+    }
+    
+    .mainCardText{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+}
+
+@media only screen and (max-width:1080px){
+    .mainContent{
+        margin-top: 30px;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, minmax(50px, 1fr)) 1fr;
+        grid-template-areas: "card1"
+                             "card2"
+                             "card3"
+                             "mainCard";
+        height: 60vh;
+        min-height: 550px;
+        grid-row-gap: 20px;
+        min-height: 85vh;
+    }
+
+    .cardsTitle{
+        display:flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    .backPage{
+        position: relative;
+        width:30px;
+        margin: 0; 
+        margin-top: -10px;
+    }
+
+    h2{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .cardIcon{
+        width: 45px;
+        height: 45px;
+    }
+    
+    .description{
+        font-size: 12px;
+        line-height: 14px;
+        width: 90%;
+    }
+
+    .card1{
+        padding: 10px;
+        min-width: 200px;
+        min-height: 80px;
+    }
+    
+    .card2{
+        padding: 10px;
+        min-width: 200px;
+        min-height: 80px;
+    }
+    
+    .card3{
+        padding: 10px;
+        min-width: 200px;
+        min-height: 80px;
+    }
+
+    .clientCard{
+        padding: 20px 20px;
+    }
+
+    .clientTitle{
+        line-height: 10px;
+    }
+
+    .casoDeUso{
+        font-size: 18px;
+    }
+
+    .clientName{
+        font-size: 22px;
+    }
+    .mainCardText{
+        display: none;
+    }
+    .text{
+        padding: 10px;
+    }
+    .casoDeUso{
+        font-size: 18px;
+        margin-bottom: 0;
+    }
 }

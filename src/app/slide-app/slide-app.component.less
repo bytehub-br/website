@@ -1,10 +1,10 @@
 .mainContent{
     margin: auto;
-    margin-top: 0;
+    margin-top:0;
     width: 1200px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: minmax(700px, 1fr);
+    grid-template-rows: minmax(30vw, 1fr);
     overflow: visible;
 }
 .imageContainer{
@@ -15,7 +15,7 @@
 
 .mainImage{
     height: 60vw;
-    max-height: 600px;
+    max-height: 550px;
 }
 
 button{
@@ -58,11 +58,14 @@ button{
         width: 85vw;
         grid-template-columns: 1fr 1fr;
     }
+    .title{
+        font-size: 70px;
+    }
     .imageContainer{
         justify-content: center;
     }
     .mainImage{
-        width: 100%;
+        height: 70vh;
     }
 }
 
@@ -75,16 +78,22 @@ button{
         align-items: center;
     }
     .title{
-        font-size: 12vw;
+        font-size: 40px;
         text-align: center;
     }
     .paragraph{
-        font-size: 3vw;
-        line-height: 4vw;
+        width: 200px;
+        font-size: 12px;
+        line-height: 16px;
         text-align: center;
-        width: 100%
+        width: 300px;
     }
     .imageContainer{
         grid-row-start: 1;
     }
+    .mainImage{
+        height: 30vh;
+    }
 }
+
+// @media only screen and (max-width )
