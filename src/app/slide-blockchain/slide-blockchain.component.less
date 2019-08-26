@@ -4,18 +4,18 @@
     width: 1200px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(700px, 1fr);
     overflow: visible;
 }
 .imageContainer{
     display: flex;
     justify-content: flex-end;
-   
+    align-items: center;
 }
 
 .mainImage{
-    height: 600vw;
+    height: 60vw;
     max-height: 600px;
-
 }
 
 button{
@@ -51,4 +51,40 @@ button{
     font-size: 16px;
     line-height: 23px;
     margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1400px){
+    .mainContent{
+        width: 85vw;
+        grid-template-columns: 1fr 1fr;
+    }
+    .imageContainer{
+        justify-content: center;
+    }
+    .mainImage{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1080px){
+    .mainContent{
+        grid-template-columns: 1fr;
+        grid-template-rows: 35vh  35vh;
+    }
+    .mainPresentation{
+        align-items: center;
+    }
+    .title{
+        font-size: 12vw;
+        text-align: center;
+    }
+    .paragraph{
+        font-size: 3vw;
+        line-height: 4vw;
+        text-align: center;
+        width: 100%
+    }
+    .imageContainer{
+        grid-row-start: 1;
+    }
 }
