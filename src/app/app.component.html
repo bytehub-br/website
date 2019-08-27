@@ -3,7 +3,7 @@
     <img class="logo" src="../assets/images/Bytehub logo.svg" alt="">
   </div>
   <!-- Main page slides start -->
-  <div id="carouselExampleControls" data-interval="4000" class="carousel slide" data-ride="carousel">
+  <div id="carouselExampleControls" data-interval="false" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -37,8 +37,10 @@
 <div style="position: absolute; left: 50%;">
     <div style="position: relative; left: -50%;">
       <img class="circle" src="../assets/images/Circle.png" alt="">
+      <div class="up-arrow" ngx-scroll-to 
+        [ngx-scroll-to-offset]="-1100"><img class="upArrow"src="../assets/images/up-arrow.svg" alt=""></div>
     </div>
 </div>
-
-
+<div class="space"></div>
+  
 <router-outlet></router-outlet>

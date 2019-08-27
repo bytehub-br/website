@@ -3,11 +3,14 @@
 }
 
 .mainContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 1200px;
     margin: auto;
-    margin-top: 100px;
-    height: 500px;
-    min-height: 500px;
+    padding-top: 50px;
+    height: 100%;
+    min-height: 100vh;
 }
 
 .clientTitle{
@@ -26,18 +29,19 @@ button{
     border: none;
 }
 .backPage{
-    position: relative;
+    position: absolute;
     width:50px;
-    margin-left:-110px; 
+    top: 0; 
 }
 h2{
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
-    font-size: 50px;
+    font-size: 40px;
 
     color: #313131;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    padding-top: 20px;
 }
 
 .clientName{
@@ -86,7 +90,7 @@ h2{
 }
 
 .cardIcon{
-    height: 100px;
+    height: 75px;
 }
 
 h4{
@@ -101,14 +105,14 @@ h4{
 .cards{
     display: grid;
     grid-template-columns: repeat(2, minmax(100px, 1fr)) ;
-    grid-template-rows: repeat(3, minmax(50px, 1fr));
+    grid-template-rows: repeat(3, minmax(50px, 120px));
     grid-template-areas: "card1 mainCard"
                          "card2 mainCard"
                          "card3 mainCard";
     grid-row-gap: 25px;
     grid-column-gap: 50px;
-    height: 85vh;
-    min-height: 550px;
+    min-height: 450px;
+    max-height: 700px;
 }
 
 .card1{
@@ -176,19 +180,17 @@ h4{
 }
 
 .footer{
-    width:85vw;
-    height: 50px;
+    width:100%;
+    height: 30px;
     background: #CA5059;
     border-radius: 8px 8px 0 0;
-    bottom: -50px;
+    margin:0 auto;
 }
 
 @media only screen and (max-width:1400px){
    .mainContent{
-        width: 85vw;
-        margin: auto;
-        margin-top: 10vh;
-        height:90vh;
+        width: 1000px;
+        margin: auto; 
     }
     h4{
         font-size: 18px;
@@ -206,14 +208,16 @@ h4{
     .cards{
         display: grid;
         grid-template-columns: repeat(2, minmax(100px, 1fr)) ;
-        grid-template-rows: repeat(3, minmax(50px, 1fr));
+        grid-template-rows: repeat(3, minmax(50px, 120px));
         grid-template-areas: "card1 mainCard"
                              "card2 mainCard"
                              "card3 mainCard";
         grid-row-gap: 25px;
-        grid-column-gap: 50px;
-        height: 85vh;
-        min-height: 550px;
+        height: 450px;
+        justify-content: center;
+        align-content: center; 
+        margin-bottom: 20px;
+
     }
     .cardIcon{
         height: 70px;
@@ -238,27 +242,32 @@ h4{
     
 }
 
-@media only screen and (max-width:1080px){
+@media only screen and (max-width:865px){
     .mainContent{
-        margin-top: 30px;
+        width: 100%;
+        margin-top: 0;
+        height: 100vh;
+        padding-left: 20px;
+        padding-right: 20px;
+
     }
     .cards{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, minmax(50px, 1fr)) 1fr;
+        grid-template-rows: repeat(3, minmax(75px, 1fr)) 1fr;
         grid-template-areas: "card1"
                              "card2"
                              "card3"
                              "mainCard";
-        height: 60vh;
-        min-height: 550px;
+        height: 100%;
+        min-height: 450px;
         grid-row-gap: 20px;
-        min-height: 85vh;
+        margin-bottom: 20px;
     }
 
     .cardsTitle{
         display:flex;
-        justify-content: space-between;
+        justify-content: center;
         margin-bottom: 15px;
     }
     .backPage{
@@ -269,7 +278,7 @@ h4{
     }
 
     h2{
-        font-size: 22px;
+        font-size: 20px;
         margin-bottom: 10px;
     }
 
@@ -281,29 +290,30 @@ h4{
     .description{
         font-size: 12px;
         line-height: 14px;
-        width: 90%;
+        width: 100%;
     }
 
     .card1{
         padding: 10px;
-        min-width: 200px;
+        min-width: 250px;
         min-height: 80px;
     }
     
     .card2{
         padding: 10px;
-        min-width: 200px;
+        min-width: 250px;
         min-height: 80px;
     }
     
     .card3{
         padding: 10px;
-        min-width: 200px;
+        min-width:250px;
         min-height: 80px;
     }
 
     .clientCard{
         padding: 20px 20px;
+        width:100%;
     }
 
     .clientTitle{

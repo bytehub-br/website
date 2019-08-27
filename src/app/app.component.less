@@ -3,15 +3,17 @@
 }
 
  .mainPage{
-     /* Permalink - use to edit and share this gradient: https:colorzilla.com/gradient-editor/#eeeeee+0,ffffff+86 */
-     background: #eeeeee; /* Old browsers */
-     background: -moz-linear-gradient(top,  #eeeeee 0%, #ffffff 86%); /* FF3.6-15 */
-     background: -webkit-linear-gradient(top,  #eeeeee 0%,#ffffff 86%); /* Chrome10-25,Safari5.1-6 */
-     background: linear-gradient(to bottom,  #eeeeee 0%,#ffffff 86%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-     
-     height: 100%;
-     padding-top: 25px;
+    background: #eeeeee;
+    background: -moz-linear-gradient(top, #eeeeee 0%, #ffffff 63%, #ffffff 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #eeeeee), color-stop(63%, #ffffff), color-stop(100%, #ffffff));
+    background: -webkit-linear-gradient(top, #eeeeee 0%, #ffffff 63%, #ffffff 100%);
+    background: -o-linear-gradient(top, #eeeeee 0%, #ffffff 63%, #ffffff 100%);
+    background: -ms-linear-gradient(top, #eeeeee 0%, #ffffff 63%, #ffffff 100%);
+    background: linear-gradient(to bottom, #eeeeee 0%, #ffffff 63%, #ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#ffffff', GradientType=0 );
+    
+    height: 100%;
+    padding-top: 50px;
  }
 
 .carousel-control-next{
@@ -20,8 +22,8 @@
 
 .carousel-control-next-icon{
    background-image: url(../assets/images/next.svg);
-   width:70px;
-   height: 70px;
+   width:50px;
+   height: 50px;
 }
 
  .carousel-control-prev{
@@ -30,15 +32,15 @@
  
  .carousel-control-prev-icon{
     background-image: url(../assets/images/back.svg);
-    width:70px;
-    height: 70px;
+    width:50px;
+    height: 50px;
     fill: white;
 }
 
 .slide{
     display: flex;
     justify-content: center;
-    height: 90vh;
+    height: 80vh;
     flex-direction: column;      
 }
 
@@ -55,18 +57,16 @@
 }
 
 .carousel-indicators li{
-    top: 10px;
-    position: relative;
-    height: 6px;
-    background-color: rgb(206, 121, 9);
+    display: none;
 }
-
-
 
 .logo{
-    width:180px;
+    width:140px;
 }
 
+.space{
+    height: 110px;
+}
 
 .bottomPage{
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+22,eeeeee+100 */
@@ -78,9 +78,19 @@
 
 }
 
+.upArrow{
+    position: absolute;
+    width: 25px;
+    left:82px;
+    top: 112px;
+}
+
+.up-arrow{
+    cursor: pointer;
+}
 .circle{
-    width:200px;
-    margin-top: -75px;
+    width:190px;
+    margin-top: -40px;
 }
 
 @media only screen and (max-width: 1400px){
